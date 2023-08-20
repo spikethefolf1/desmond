@@ -1,4 +1,4 @@
-<style>
+<html><head><style>
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,13 +22,12 @@ transform: translate(-50%, -50%);
 left: 50%;
 }
 </style>
-<h1 id="unplacedheader" style="top: 30%;"> Usage </h1>
-<div id="code" style="position: absolute; transform: translate(-50%, -50%); top: 61%; left: 50%;">&lt;html&gt;&#10;<br>
-  &lt;body&gt;&#10;<br>    &lt;desmond-player id=&#34;player&#34;&gt;&lt;/desmond-player&gt;&#10;<br>    &lt;script src=&#34;desmond.min.js&#34;&gt;&lt;/script&gt;&#10;<br>    &lt;script&gt;&#10;<br>     window.onload = function(){<br>&#10;    document.getElementById(&#34;player&#34;).loadURL(&#34;path-to-game.nds&#34;);<br>&#10;     }&#10;    <br>&lt;/script&gt;&#10;<br>  &lt;/body&gt;<br>&#10;&lt;/html&gt;</div>
-<h1 id="unplacedheader" style="position: relative; width: 100%; text-align: center; top: 85%;"> Demo </h1>
-<input type="file" style="position: relative; transform: translate(-50%, -50%); left: 30%; top: 90%;"></input>
-<input type="checkbox" id="microphone_on" style="position: relative; transform: translate(-50%, -50%); left: 30%; top: 95%;"></input>
-<desmond-player id="player" style="position: relative; transform: translate(-50%, -50%); left: 35%; top: 100%; border-color: black;"></desmond-player>
+</head><body>
+
+
+<input type="file" style="position: relative; transform: translate(-50%, -50%); left: 30%; top: 90%;">
+
+<desmond-player id="player"></desmond-player>
 <script src="dist/desmond.min.js"></script>
 <script>
   document.querySelector("input").onchange = function(){
@@ -370,3 +369,4 @@ function w3CodeColor(elmnt, mode) {
   }  
 }
 </script>
+</body></html>
